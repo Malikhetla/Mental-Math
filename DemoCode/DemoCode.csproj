@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Trigonometry\Trigonometry.xaml.cs">
+      <DependentUpon>Trigonometry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Viewmodels\Arithmetic.cs" />
+    <Compile Include="Viewmodels\Geometry.cs" />
+    <Compile Include="Viewmodels\Trigonometry.cs" />
+    <Page Include="Arithmetic\Arithmetic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Geometry\Geometric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,10 +77,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Arithmetic\Arithmetic.xaml.cs">
+      <DependentUpon>Arithmetic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry\Geometric.xaml.cs">
+      <DependentUpon>Geometric.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Trigonometry\Trigonometry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -92,6 +117,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-math-formulas-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="if_add_2460234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="if_delete_1772623.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="if_division2_1772614.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="if_substract_2677681.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,67 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DemoCode"
+        xmlns:Viewmodels ="clr-namespace:DemoCode.Viewmodels"
+        xmlns:Arithmetic ="clr-namespace:DemoCode.Arithmetic"
+        xmlns:Geometry ="clr-namespace:DemoCode.Geometry"
+        xmlns:Trigononometry ="clr-namespace:DemoCode.Trigonometry"
+        
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Name="ArithmeticViewTemplate" DataType ="{x:Type Arithmetic:Arithmetic}">
+            <Arithmetic:Arithmetic DataContext="{Binding}">
+            </Arithmetic:Arithmetic>
+        </DataTemplate>
+        <DataTemplate x:Name="GeometryViewTemplate" DataType ="{x:Type Geometry:Geometric}">
+            <Geometry:Geometric DataContext="{Binding}">
+            </Geometry:Geometric>
+        </DataTemplate>
+        <DataTemplate x:Name="TrigonometricViewTemplate" DataType ="{x:Type Trigononometry:Trigonometry}">
+            <Trigononometry:Trigonometry DataContext="{Binding}">
+            </Trigononometry:Trigonometry>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Background="BlueViolet" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5"></DockPanel>
+        <StackPanel>
+            <TextBox x:Name="txtLevel" Text="Choice">
+
+            </TextBox>
+            <Button x:Name="btnArithmetic" Content="Arithmetic" FontWeight="Bold" Click="Arithmetic_Clicked"></Button>
+            <Button x:Name="btnGeomtry" Content="Geometry" FontWeight="Bold" Click="Geometry_Clicked"></Button>
+            <Button x:Name="btnTrigonometry" Content="Trigonometry" FontWeight="Bold" Click="Trigonometry_Clicked"></Button>
+
+           
+
+        </StackPanel>
+
+        <Button x:Name="btnStart" Grid.ColumnSpan="3" Content="Start" Grid.Column="2" HorizontalAlignment="Left" Margin="29,71,0,0" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.493,20.8" Height="57" Grid.RowSpan="2" Grid.Row="2" FontSize="36" FontWeight="Bold" Click="btnStart_Clicked"/>
+        <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="5" Content="{Binding}"/>
     </Grid>
 </Window>
