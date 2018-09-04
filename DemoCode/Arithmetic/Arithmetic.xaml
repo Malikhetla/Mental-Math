@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/excel-math-formulas-preview.png"/>
+            <ImageBrush ImageSource="C:\Users\g18m0999\source\repos\Mental-Math\.vs\Mental-Math\v15\Mental-Math\DemoCode\excel-math-formulas-preview.png"/>
         </Grid.Background>
         <Label x:Name="aLabel" Content="0" HorizontalAlignment="Left" Margin="175,166,0,0" VerticalAlignment="Top" FontSize="48" Height="66" Width="38" RenderTransformOrigin="0.669,0.676" FontFamily="Segoe UI Black"/>
         <Label x:Name="OPERATORS" Content="Label" HorizontalAlignment="Left" Margin="358,183,0,0" VerticalAlignment="Top" FontSize="20"/>

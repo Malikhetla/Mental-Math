@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DemoCode.Geometry
+namespace Finale
 {
     /// <summary>
-    /// Interaction logic for Geometric.xaml
+    /// Interaction logic for Categories.xaml
     /// </summary>
-    public partial class Geometric : UserControl
+    public partial class Categories : Window
     {
-        public Geometric()
+        public Categories()
         {
             InitializeComponent();
         }

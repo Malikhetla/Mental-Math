@@ -12,48 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DemoCode.Viewmodels;
 
-
-
-namespace DemoCode
+namespace Finale
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+        
     public partial class MainWindow : Window
     {
-        
-        
+        Categories cate;
+        MainWindow myMain;
         public MainWindow()
         {
             InitializeComponent();
-           
         }
 
-        public void Arithmetic_Clicked(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataContext = new Arithmetic.Arithmetic();
-        }
-
-        private void Geometry_Clicked(object sender, RoutedEventArgs e)
-        {
-            DataContext = new Geometry.Geometric();
-
-        }
-
-        private void Trigonometry_Clicked(object sender, RoutedEventArgs e)
-        {
-            DataContext = new Trigonometry.Trigonometry();
-        }
-
-        private void btnStart_Clicked(object sender, RoutedEventArgs e)
-        {
-           
-
+            cate = new Categories();
+            cate.Show();
+            myMain = new MainWindow();
+            myMain.Hide();
         }
     }
 }
-    
-    
-
