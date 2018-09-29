@@ -1,17 +1,18 @@
-﻿<Window x:Class="Finale.MainWindow"
+﻿<Window x:Name="myMainn" x:Class="Finale.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Finale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height= "718.11023622" Width="1625.196850394" 
+        HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen" ResizeMode="CanResize"
+        >
     <Grid>
-        <Image x:Name="Latnem_Maths" Height="109" Margin="127,63,0,147" Width="247" HorizontalAlignment="Left" RenderTransformOrigin="0.48,0.492"/>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="72,215,0,0" VerticalAlignment="Top" Width="120" Height="37" Click="Button_Click"/>
-        <Button Content="Settings&#xA;" HorizontalAlignment="Left" Margin="192,215,0,0" VerticalAlignment="Top" Width="120" Height="37"/>
-        <Button Content="High Scores&#xA;" HorizontalAlignment="Left" Margin="312,215,0,0" VerticalAlignment="Top" Width="120" Height="37"/>
-        <Image Margin="80,39,97,132" Source="images.jpg" Stretch="Fill"/>
+        <Button x:Name="bnStart" Content="Start" HorizontalAlignment="Left" Margin="85,417,0,0" VerticalAlignment="Top" Width="211" Height="55" Click="Button_Click"/>
+        <Button x:Name="bnSetting" Content="Settings&#xA;" HorizontalAlignment="Left" Margin="296,417,0,0" VerticalAlignment="Top" Width="197" Height="55" FontSize="14"/>
+        <Button x:Name="bnHighScores" Content="High Scores&#xA;" HorizontalAlignment="Left" Margin="480,417,0,0" VerticalAlignment="Top" Width="196" Height="55"/>
+        <Image Margin="45,44,37,107" Source="images.jpg" Stretch="None"/>
 
     </Grid>
 </Window>

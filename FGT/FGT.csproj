@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D49439B-AEC5-4615-8A23-F2FA9D0126F9}</ProjectGuid>
+    <ProjectGuid>{3EB232F8-487E-4CDF-86A0-EB21BF35D4C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Finale</RootNamespace>
-    <AssemblyName>Finale</AssemblyName>
+    <RootNamespace>FGT</RootNamespace>
+    <AssemblyName>FGT</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,7 +36,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -45,9 +44,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="ThinkLib">
-      <HintPath>..\..\..\..\..\..\..\..\Downloads\ThinkLib.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -58,26 +54,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Geometry.xaml.cs">
-      <DependentUpon>Geometry.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MessageBoxButtons.cs" />
-    <Compile Include="Settings.cs" />
-    <Compile Include="Trignometry.xaml.cs">
-      <DependentUpon>Trignometry.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Arithmetic.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Categories.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Geometry.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,20 +62,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Arithmetic.xaml.cs">
-      <DependentUpon>Arithmetic.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Categories.xaml.cs">
-      <DependentUpon>Categories.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Trignometry.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -120,39 +86,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
-      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="excel-math-formulas-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="geometry-3146.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="trig_rounded_sm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="division.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Division.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Multiply.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\substract_.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

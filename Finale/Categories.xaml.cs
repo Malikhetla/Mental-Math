@@ -19,9 +19,49 @@ namespace Finale
     /// </summary>
     public partial class Categories : Window
     {
+        MainWindow myMain;
+        Arithmetic arith;
+        Geometry Geometry;
+        
+        
+        
+
         public Categories()
         {
             InitializeComponent();
         }
+        private void Exit_bn (object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show(@"Do you want to return to the Main Menu?", "Close Game", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                myMain = new MainWindow(); 
+                Cate.Hide();
+                myMain.Show();
+            }
+
+        }
+        private void Arithmetic_bn (object sender, RoutedEventArgs e)
+        {
+            arith = new Arithmetic(); 
+            Cate.Hide();
+            arith.Show();
+
+        }
+        private void Geometry_bn(object sender, RoutedEventArgs e)
+        {
+            Geometry = new Geometry();
+            Cate.Hide();
+            Geometry.Show();
+
+        }
+        private void Trigonometry_bn(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
+
+    internal class DialogResult
+    {
     }
 }

@@ -58,6 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="geo.xaml.cs" />
+    <Compile Include="Geometry1.xaml.cs">
+      <DependentUpon>Geometry1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Trigonometry\Trigonometry.xaml.cs">
       <DependentUpon>Trigonometry.xaml</DependentUpon>
     </Compile>
@@ -68,6 +72,10 @@
       <DependentUpon>Geometry.xaml</DependentUpon>
     </Compile>
     <Page Include="Arithmetic\Arithmetic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Geometry1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,7 +133,7 @@
     <None Include="excel-math-formulas-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="if_add_2460234.png" />
+    <Content Include="Add.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="if_delete_1772623.png" />

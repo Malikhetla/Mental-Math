@@ -1,13 +1,22 @@
-﻿<Window x:Class="Finale.Geometry"
+﻿<Window  x:Name="geometry" x:Class="Finale.Geometry"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Finale"
         mc:Ignorable="d"
-        Title="Geometry" Height="300" Width="300">
+        Title="Geometry"  Height= "718.11023622" Width="1625.196850394" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Button Content="EXIT" HorizontalAlignment="Left" Margin="256,-24,0,0" VerticalAlignment="Top" Width="31"/>
+
+        <Button Content="EXIT" Margin="1443,10,0,649" Click="Button_Click" RenderTransformOrigin="0.219,-0.996"/>
+        <Canvas x:Name="canvas" Height="471" Margin="41,84,0,0" VerticalAlignment="Top" Background="Blue" HorizontalAlignment="Left" Width="1300">
+            <Button Content="PLAY" Width="57" Height="25" Click="Button_Click_4"/>
+        </Canvas>
+        <Button x:Name="btnOption1"  HorizontalAlignment="Left" Margin="143,618,0,0" VerticalAlignment="Top" Width="153" Click="Button_Click_1" Height="41" Content="0"/>
+        <Button x:Name="btnOption2"  HorizontalAlignment="Left" Margin="634,618,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_2" Height="41" Content="0"/>
+        <Button x:Name="btnOption3" HorizontalAlignment="Left" Margin="1166,618,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click_3" Height="41" Content="0"/>
+        <TextBox x:Name="txtQuestionSpace" HorizontalAlignment="Left" Height="53" Margin="37,560,0,0" TextWrapping="Wrap" Text="Press GO! to start playing" VerticalAlignment="Top" Width="1304" RenderTransformOrigin="-0.092,0.159"/>
+        <TextBlock x:Name="txtbTimer" HorizontalAlignment="Left" TextAlignment="Center" FontSize="50"   Margin="966,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="446" RenderTransformOrigin="0.573,-0.641"/>
 
     </Grid>
 </Window>

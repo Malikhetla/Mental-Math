@@ -1,13 +1,12 @@
-﻿<Window x:Class="Finale.Trignometry"
+﻿<Window x:Class="FGT.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Finale"
+        xmlns:local="clr-namespace:FGT"
         mc:Ignorable="d"
-        Title="Trignometry" Height="300" Width="300">
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="EXITbn" Content="EXIT" HorizontalAlignment="Left" Margin="257,-25,0,0" VerticalAlignment="Top" Width="31" Click="EXIT_bn"/>
-
+        
     </Grid>
 </Window>

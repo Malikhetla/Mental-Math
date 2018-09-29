@@ -13,31 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Finale
+namespace Ultimate
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-        
     public partial class MainWindow : Window
     {
-        Categories cate;
-      //  MainWindow myMain;
-
-
         public MainWindow()
         {
             InitializeComponent();
-            
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            cate = new Categories();
-            
-          //  myMain = new MainWindow();
-            myMainn.Hide();
-            cate.Show();
         }
     }
 }

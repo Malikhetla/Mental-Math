@@ -19,9 +19,25 @@ namespace Finale
     /// </summary>
     public partial class Trignometry : Window
     {
+        MainWindow myMain;
+        Trignometry trig;
         public Trignometry()
         {
             InitializeComponent();
+        }
+
+        private void EXIT_bn(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show(@"Do you want to return to the Main Menu?", "Close Game", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                myMain = new MainWindow();
+                trig = new Trignometry();
+                trig.Hide();
+                myMain.Show();
+
+            }
+
         }
     }
 }
